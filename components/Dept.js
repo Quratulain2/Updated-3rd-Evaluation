@@ -1,9 +1,8 @@
 import React from 'react'
 import { Component } from 'react';
 import "./Dept.css";
-import Login from "./Login";
-import AdminBar from "./Admin_bar";
-import "./Create_acc.css";
+
+// import "./Create_acc.css";
 //  import "./test.css";
 
  
@@ -31,44 +30,8 @@ class Dept extends Component{
   
     return(
         <div className="content">
-        {/* <div className ="sidebar">
-  <a className = "active" href="#home" >Profile</a>
-  <a href= "#news" >Update</a>
-  <a href= "#contact" >Delete</a>
-  <a href= "#about" >Data View</a>
-</div> */}
-{/* <div className="topnav" id="myTopnav">
-  <a href="#home" className="active">Profile</a>
-  <a href="#news">Create</a>
-  <a href="#contact">Delete</a>
-  <a href="#about">Data View</a>
-  <a href="javascript:void(0);" className="icon" onclick="myFunction()">
-    <i className="fa fa-bars"></i>
-  </a>
-</div> */}
-
-
-{/* <AdminBar/> */}
-{/* <form className="container">
-<h1 className="Pass" >Change Password</h1>
-<div className="icontrol">
-            <label >Current Password</label>
-             <input type="password" name="dept_name" id="dept_name" />
-             <div className="icontrol">
-              <label >New password</label>
-              <input type="password" name="chair_name" id="chair_name" />
-               </div>
-               <div className="icontrol">
-              <label >Re-enter new password</label>
-              <input type="password" name="vicechair_name" id="vicechair_name" />
-               </div>
-              
-               <div className ="icontrol">
-             <input type="submit" value="Done" />
-              </div>
-            </div>
-</form>  */}
-<form className="container">
+      
+<form className="container1">
   <div class="form-group">
       <h1 id="signUp">Change Password</h1>
       <br></br>
