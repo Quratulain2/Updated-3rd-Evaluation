@@ -15,10 +15,10 @@ export class Mid extends Component {
               <form > 
               <h1 style={{color:"black",color:"#0b1442",textAlign:"center",fontWeight:"bold",fontSize:"50PX"}}>OBE BASED FYP</h1>
               <table >
-              <tr><td> <input type="text" placeholder="Project Title" className="mid_inp"></input></td>
-                  <td> <input type="text" placeholder="Project ID" className="mid_inp"></input></td>
-                  <td><input type="number" placeholder="Batch" className="mid_inp"></input></td>
-                  <td><input type="text" placeholder="Group ID" className="mid_inp"></input></td>
+              <tr><td> <input type="text" placeholder="Project Title" className="mid_inp" readOnly></input></td>
+                  <td> <input type="text" placeholder="Project ID" className="mid_inp" required autofocus></input></td>
+                  <td><input type="number" placeholder="Batch" className="mid_inp" required></input></td>
+                  <td><input type="text" placeholder="Group ID" className="mid_inp" required></input></td>
                   <td><input type="date"className="mid_inp"></input></td>
                   <td><select name="eval_no" id="eval_no">
                       <option >Select Evaluation no</option>
