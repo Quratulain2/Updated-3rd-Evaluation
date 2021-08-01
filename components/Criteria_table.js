@@ -2,7 +2,8 @@ import React from 'react'
 import "./Mid.css";
 function Criteria_table(props) {
     
-     
+    //  let c_13=0;
+    //  let c_15=0;
     function handleSubmit() {
        // e.preventDefault();
         let eval1 =document.getElementById('eval1'+ props.c_no);
@@ -12,10 +13,12 @@ function Criteria_table(props) {
        let total= parseInt(eval1.value)+parseInt(eval2.value)+parseInt(eval3.value);
        total_sum.value=total;
        
-       console.log(props.c_no,props.PLO);
-    //    alert('hi');
-
+    //    console.log(props.c_no,props.PLO);
+   
+    
    }
+  
+ 
     return (
         <div id="c_table">
              <table style={{border:"none",padding:"10px"}} id="mark_table"> 
@@ -31,7 +34,7 @@ function Criteria_table(props) {
                {/* Dropbox for evaluator1 */}
                <td><select name={'eval1' + props.c_no } id={'eval1' + props.c_no } onChange={handleSubmit}>
         
-     <option >1</option>
+     <option selected >1</option>
     <option >2</option>
      <option >3</option>
     <option >4</option>
@@ -45,7 +48,7 @@ function Criteria_table(props) {
             {/* Dropbox for evaluator2 */}
            <td><select name={'eval2' + props.c_no } id={'eval2' + props.c_no } onChange={handleSubmit}>
         
-     <option >1</option>
+     <option selected>1</option>
     <option >2</option>
      <option >3</option>
     <option >4</option>
@@ -59,7 +62,7 @@ function Criteria_table(props) {
             {/* Dropbox for evaluator3 */}
            <td><select name={'eval3' + props.c_no } id={'eval3' + props.c_no } onChange={handleSubmit}>
         
-     <option >1</option>
+     <option selected>1</option>
     <option >2</option>
      <option >3</option>
     <option >4</option>
