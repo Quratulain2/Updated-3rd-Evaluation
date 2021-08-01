@@ -2,17 +2,20 @@ import React, { Component } from 'react'
 import Criteria_table from "./Criteria_table";
 
 export class Mid extends Component {
-    
+    // sumfunct= itsvalue => {
+    //     let sum ;
+    //     sum=itsvalue;
+    //   } 
    
     render() {
         
-            
-           
+       
+        
            
         return (
             <div id="c_table">
               
-              <form > 
+              <form  action="/std"> 
               <h1 style={{color:"black",color:"#0b1442",textAlign:"center",fontWeight:"bold",fontSize:"50PX"}}>OBE BASED FYP</h1>
               <table >
               <tr><td> <input type="text" placeholder="Project Title" className="mid_inp" readOnly></input></td>
@@ -31,7 +34,8 @@ export class Mid extends Component {
                   
               </table>
               <div id="eval_table">
-              <h3 className="main_heading2" style={{textTransform:"uppercase",fontSize:"30px",color:"#0b1442",fontFamily:"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"}}>Evaluator Details</h3>
+              <h3 className="main_heading2" style={{textTransform:"uppercase",fontSize:"30px",
+              color:"#0b1442",fontFamily:"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"}}>Evaluator Details</h3>
           <br></br>
           <table style={{border:"1px solid black"}} className="detail">
 
@@ -61,20 +65,37 @@ export class Mid extends Component {
                      <br></br>
                      <br></br>
                      </div>
-                     <h3 className="main_heading2" style={{textTransform:"uppercase",fontSize:"30px",color:"#0b1442",fontFamily:"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"}}>GROUP ASSESSMENT</h3>
-               <Criteria_table c_no="13" PLO="11"/>
-               <Criteria_table c_no="14" PLO="11"/>
-               <Criteria_table c_no="15" PLO="11"/> 
-               <Criteria_table c_no="16" PLO="11"/> 
-               <Criteria_table c_no="17" PLO="5"/> 
+                     <h3 className="main_heading2" style={{textTransform:"uppercase",fontSize:"30px",
+                     color:"#0b1442",fontFamily:"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"}}>GROUP ASSESSMENT</h3>
+               <Criteria_table c_no="13" PLO="11" />
+               <Criteria_table c_no="14" PLO="11" />
+               {/* <Criteria_table c_no="15" PLO="11"itsvalue={this.sumfunct}/> 
+               <Criteria_table c_no="16" PLO="11"itsvalue={this.sumfunct}/> 
+               <Criteria_table c_no="17" PLO="5" itsvalue={this.sumfunct}/>  */}
                
              
 
              
               {/* <h3 style={{color:"black"}}>Criteria1</h3> */}
              
-                  <br></br>
-                  <button type="submit" class="btn btn-primary" id="marks_submit_btn">Save and Next </button>
+                  
+                  {/* <a href="/std" style={{textDecoration:"none"}}>  <button type="submit" class="btn btn-primary" id="marks_submit_btn" >
+                       Save and Next</button>
+                       </a>   */}
+                       <div style={{float:"right",paddingRight:"50%",paddingBottom:"2%"}}>
+           
+            <button 
+            type="submit" 
+            
+            class="btn btn-primary" 
+            style={{}}
+            id="marks_submit_btn"
+            onClick  >
+                       Next</button>
+                      
+                       <br></br>
+                
+                       </div>                
                   </form>
             </div>
         )
