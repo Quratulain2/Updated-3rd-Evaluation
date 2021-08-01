@@ -14,15 +14,15 @@
     background-size: cover;
     background-position: center center;
 } */
-.container{
+.container1{
 
 
-  position: absolute;;
-  top: 70%;
+  position: absolute;
+  top: 60%;
   left: 50%;
   transform: translate(-50%,-50%);
   /* background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)); */
-   /* background-color: rgba(38, 144, 243, 0.103);  */
+  box-shadow: 7px 7px 60px rgba(2, 2, 26, 0.411);
   width: 400px;
   padding: 30px 30px;
   
